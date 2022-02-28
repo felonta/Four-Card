@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.top-container {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.top-container h1 {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  font-size: 2rem;
+}
+.top-container h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.top-container p {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 15px 25px 15px;
+  height: 250px;
+  padding: 25px;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(97, 130, 196, 0.2),
+    0 6px 6px rgba(97, 130, 196, 0.2);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+.card p {
+  font-size: 0.775rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.card img {
+  position: absolute;
+  padding: 30px;
+  right: 0;
+  bottom: 0;
+  width: 115px;
+  height: 115px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.card-supervisor::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.card-supervisor:hover {
+  box-shadow: 0 10px 20px hsla(180, 62%, 55%, 0.1),
+    0 6px 6px hsla(180, 62%, 55%, 0.1);
+}
+.card-team::after {
+  background-color: hsl(0, 78%, 62%);
+}
+.card-team:hover {
+  box-shadow: 0 10px 20px hsla(0, 78%, 62%, 0.1),
+    0 6px 6px hsla(0, 78%, 62%, 0.1);
+}
+.card-karma::after {
+  background-color: hsl(34, 97%, 64%);
+}
+.card-karma:hover {
+  box-shadow: 0 10px 20px hsla(34, 97%, 64%, 0.1),
+    0 6px 6px hsla(34, 97%, 64%, 0.1);
+}
+.card-calculator::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card-calculator:hover {
+  box-shadow: 0 10px 20px hsla(212, 86%, 64%, 0.3),
+    0 6px 6px hsla(212, 86%, 64%, 0.3);
+}
+
+@media only screen and (max-width: 900px) {
+  .top-container {
+    margin-top: 30px;
+  }
+  .top-container h1 {
+    font-size: 1.5rem;
+  }
+  .top-container h2 {
+    font-size: 1.5rem;
+  }
+  .top-container p {
+    font-size: 1em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
