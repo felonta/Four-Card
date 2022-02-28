@@ -22,9 +22,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-
-```
-
 ## Author
 
 - Website - Felonta - Gabriel
